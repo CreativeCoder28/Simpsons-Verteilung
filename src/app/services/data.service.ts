@@ -23,11 +23,11 @@ export class DataService {
   /* baseurl_data = 'http://localhost:3000/data/';
   baseurl_user = 'http://localhost:3000/userEntryData/';*/
 
-  baseurl_data = 'https://simpsons-app.firebaseio.com/data/.json';
-  baseurl_user = 'https://simpsons-app.firebaseio.com/userEntryData/.json';
+  /* baseurl_data = 'https://simpsons-app.firebaseio.com/data/.json';
+  baseurl_user = 'https://simpsons-app.firebaseio.com/userEntryData/.json';*/
 
-  /* baseurl_data = '../../assets/data/dataSource.json';
-  baseurl_user = '../../assets/data/userEntryData.json'; */
+  baseurl_data = '../../assets/data/dataSource.json';
+  baseurl_user = '../../assets/data/userEntryData.json'; 
 
   constructor(private http: HttpClient) {}
 
