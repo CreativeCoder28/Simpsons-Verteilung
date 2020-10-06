@@ -1,0 +1,7 @@
+<div class="chartjs-container">
+  <h5 style="text-align:center"> Verteilungs Funktion</h5>
+  <canvas baseChart height="120px" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+    [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" [plugins]="lineChartPlugins"
+    (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)" #mychart>
+  </canvas>
+</div>

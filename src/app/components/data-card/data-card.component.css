@@ -1,0 +1,126 @@
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
+  line-height: 1.1;
+  font-size: 18x;
+  color: rgb(73, 73, 73);
+  margin: 8px, 0;
+}
+
+.mb-2,
+.my-2 {
+  margin-bottom: 0.5rem !important;
+}
+.mt-2,
+.my-2 {
+  margin-top: 0.5rem !important;
+}
+.ml-1,
+.mx-1 {
+  margin-left: 0.25rem !important;
+}
+.mr-1,
+.mx-1 {
+  margin-right: 0.25rem !important;
+}
+
+.form-block {
+  align-content: flex-end;
+}
+
+label {
+  font-weight: 100;
+  margin: 8px;
+  font-size: 24x;
+  line-height: 1.1;
+  align-content: flex-end;
+  color: inherit;
+}
+.rangeSelector {
+  width: 30px;
+  margin: 10px;
+}
+input[type="number"] {
+  font-weight: 100;
+  margin-top: 8px;
+  font-size: 24x;
+  margin-left: 10px;
+  height: 25px;
+  border-radius: 2px;
+  border: 1px solid #dadada;
+  -moz-appearance: textfield;
+}
+.btn-primary {
+  font-weight: 100;
+  margin: 1px;
+  border-radius: 8px;
+  color: white;
+  padding: 0, 5px;
+  font-size: 36x;
+  background-color: #71c5eb;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #04a4ee;
+}
+
+.container-fluid {
+  padding-left: 20px;
+}
+
+.container {
+  width: auto;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.data_card {
+  align-content: center;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  width: auto;
+  /* width: 910px;*/
+  padding: 15px 15px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.custom-range {
+  width: 100%;
+  height: 10px;
+  padding: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.range_container {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0 solid transparent;
+}
+
+.rangeSlider {
+  background-color: gray;
+  border-radius: 3px;
+  border: 0 solid #71c5eb;
+  width: 150px;
+  height: 10px;
+  color: #71c5eb;
+}
+
+.input-button-container {
+  z-index: 1;
+}

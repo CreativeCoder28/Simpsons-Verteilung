@@ -1,0 +1,28 @@
+<div class="container wrapper">
+  <div class="row">
+    <!-- Issue table -->
+    <div class="col-md-12">
+      <div class="inner">
+        <h5 style="text-align:center">Simpsens Verteilung Liste</h5>
+        <table #dataTable class=" display table table-striped table-max-height
+                                 table-responsive table-sticky-th ng-sticky-header">
+          <thead>
+            <tr>
+              <th scope="col">Zeitreihe</th>
+              <th scope="col">Wahrscheinlichkeit</th>
+              <th scope="col">Percentile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of dataService.DataList">
+              <td scope="col">{{data.time}}</td>
+              <td>{{data.probability}}</td>
+              <td>{{data.percentile}} %</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

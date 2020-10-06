@@ -1,0 +1,40 @@
+<!-- Toolbar -->
+<div class="toolbar" role="header">
+  <span>Simpsenverteilung</span>
+</div>
+<div class="content">
+  <!--User entry data card-->
+  <div>
+    <app-data-card></app-data-card>
+  </div>
+</div>
+
+<!--Tab element of Simpsomps Chart-->
+<section class="container" id="nav-page">
+  <!--Tab control-->
+
+  <ngb-tabset #tabGroup type="pills">
+
+    <!--Line Chart-->
+    <ngb-tab title="Datenliste" id="tab1">
+      <ng-template ngbTabContent>
+        <app-data-table-control></app-data-table-control>
+      </ng-template>
+    </ngb-tab>
+
+    <!--Simpsona Vertienlung-->
+    <ngb-tab title="Wahrscheinlichkeitsdichte" id="tab2">
+      <ng-template ngbTabContent>
+        <app-line-chart></app-line-chart>
+      </ng-template>
+    </ngb-tab>
+
+
+    <!--Cumulative Chart-->
+    <ngb-tab title="Verteilungsfunktion" id="tab3">
+      <ng-template ngbTabContent>
+        <app-cumulative-chart></app-cumulative-chart>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</section>

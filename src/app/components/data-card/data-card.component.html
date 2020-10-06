@@ -1,0 +1,29 @@
+<div class="data_card">
+  <form class=" form form-inline" #myForm="ngForm">
+    <!-- Best Case  input -->
+
+    <input required type="number" name="bestValueInput" #bestValueInput class="form-control" id="inputBestValue"
+      width="100px" pattern="[0-9]+" placeholder="Im besten Fall" [(ngModel)]="enteredValue.bestCaseValue">
+
+    <!-- Estimated input -->
+    <!--<div class="form-inline">
+       <label width="150">Estimated Value</label>-->
+    <input required type="number" name="estimatedValueInput" class="form-control" id="inputEstimatedValue" width="100px"
+      placeholder="Geschätzter Zeitbedarf" [(ngModel)]="enteredValue.estimatedValue">
+
+    <!-- Default input -->
+    <div class="form-inline">
+      <label width="250">Unsicherheitsgrad </label>
+      <!--slider control-->
+      <input class="ex17a rangeSlider custom-range ng-valid ng-touched ng-dirty" type="range" min="0"
+        name="sliderValueInput" max="10" [(ngModel)]="enteredValue.uncertainityFactor"
+        (ngmodeChande)="userData.uncertainityFactor=$event">
+      <input class="rangeSelector" type="number" for="range" itmscope itemref="range" value="" min="0"
+        for="sliderValueInput" value={{enteredValue.uncertainityFactor}} name="sliderValue"
+        [(ngModel)]="enteredValue.uncertainityFactor" max="10" required placeholder="0">
+    </div>
+    <button type="button" class="btn btn-primary " (click)="buttonClick()">
+      <span>Aktualisierung</span>
+    </button>
+  </form>
+</div>

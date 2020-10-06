@@ -1,0 +1,17 @@
+{
+  "userEntryData": {
+    "bestCaseValue": 123,
+    "estimatedValue": 123,
+    "uncertainityFactor": 4,
+    "worstCaseValue": 492,
+    "probability": 0
+  },
+  "data": [
+    {
+      "id": "_vT_yLc",
+      "probability": 0,
+      "time": 76,
+      "percentile": "0"
+    }
+  ]
+}
